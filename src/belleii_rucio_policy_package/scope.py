@@ -1,10 +1,11 @@
 from typing import TYPE_CHECKING, Optional
-from rucio.common.utils import ScopeExtractionAlgorithms
+
+import rucio.common.utils
 
 if TYPE_CHECKING:
     from collections.abc import Sequence
 
-class BelleIIScopeExtractionAlgorithm(ScopeExtractionAlgorithms):
+class BelleIIScopeExtractionAlgorithm(rucio.common.utils.ScopeExtractionAlgorithms):
     def __init__(self) -> None:
         """
         Initialises scope extraction algorithm object

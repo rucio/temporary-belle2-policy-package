@@ -1,6 +1,6 @@
-from rucio.rse.translation import RSEDeterministicTranslation
+import rucio.rse.translation
 
-class BelleIIRSEDeterministicTranslation(RSEDeterministicTranslation):
+class BelleIIRSEDeterministicTranslation(rucio.rse.translation.RSEDeterministicTranslation):
 
     def __init__(self, rse=None, rse_attributes=None, protocol_attributes=None):
         """
