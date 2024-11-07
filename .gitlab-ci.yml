@@ -1,0 +1,11 @@
+pypi:
+    image: docker.io/python:3
+    stage: deploy
+    cache: {}
+    script:
+        - pip install -U twine
+        - python -m pip install build
+        - python -m build
+        - twine upload dist/*
+    only:
+        - tags
