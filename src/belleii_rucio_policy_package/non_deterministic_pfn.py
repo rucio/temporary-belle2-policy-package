@@ -1,9 +1,9 @@
 from typing import Optional
 
-from rucio.common.utils import NonDeterministicPFNAlgorithms
+import rucio.common.utils
 
 
-class BelleIINonDeterministicPFNAlgorithm(NonDeterministicPFNAlgorithms):
+class BelleIINonDeterministicPFNAlgorithm(rucio.common.utils.NonDeterministicPFNAlgorithms):
     """
     Belle II specific non-deterministic PFN algorithm
     """
