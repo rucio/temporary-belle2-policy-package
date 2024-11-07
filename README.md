@@ -1,2 +1,4 @@
-# temporary-belle2-policy-package
-Temporary Belle II Policy package
+# Temporary Belle II Rucio policy package
+
+## Resources
+- [Rucio documentation for policy packages](https://rucio.github.io/documentation/operator/policy_packages/)
