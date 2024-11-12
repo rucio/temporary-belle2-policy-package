@@ -1,10 +1,9 @@
-from belleii_rucio_policy_package.non_deterministic_pfn import BelleIINonDeterministicPFNAlgorithm
-from belleii_rucio_policy_package.scope import BelleIIScopeExtractionAlgorithm
-from belleii_rucio_policy_package.lfn2pfn import BelleIIRSEDeterministicTranslation
-
 SUPPORTED_VERSION = ["35"]  # Only use with Rucio >=35.1.0 - pending https://github.com/rucio/rucio/issues/7082
 
 def get_algorithms():
+    from belleii_rucio_policy_package.non_deterministic_pfn import BelleIINonDeterministicPFNAlgorithm
+    from belleii_rucio_policy_package.scope import BelleIIScopeExtractionAlgorithm
+    from belleii_rucio_policy_package.lfn2pfn import BelleIIRSEDeterministicTranslation
     return { 
         'non_deterministic_pfn': {
             'belleii_non_deterministic_pfn': BelleIINonDeterministicPFNAlgorithm.construct_non_deterministic_pfn_belleii
