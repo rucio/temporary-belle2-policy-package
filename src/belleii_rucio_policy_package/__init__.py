@@ -1,4 +1,4 @@
-SUPPORTED_VERSION = ["35"]  # Only use with Rucio >=35.1.0 - pending https://github.com/rucio/rucio/issues/7082
+SUPPORTED_VERSION = [">=35.0.0"]
 
 def get_algorithms():
     from belleii_rucio_policy_package.non_deterministic_pfn import BelleIINonDeterministicPFNAlgorithm
